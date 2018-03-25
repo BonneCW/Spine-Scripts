@@ -5,6 +5,8 @@ const int SPINE_ACHIEVEMENT_DISPLAY_TIME = 5000; // show achievement for 5 secon
 
 const int SPINE_EARTHQUAKE_VIBRATION = TRUE; // earthquake triggers vibration of gamepad, only relevant for Gothic 2
 
+const int SPINE_MODNAME = "MODNAME"; // modname is necessary for achievements to work without using Spine
+
 // define the strings for the achievements
 // don't use an identifier for unlockAchievement greater than the maximum index of the array
 const int MAX_ACHIEVEMENTS = 3;

@@ -1,3 +1,7 @@
+Version 1.13.1
+
+- achievements now can also be unlocked when playing without Spine
+
 Version 1.13.0
 
 - fixed starting same frame function multiple times

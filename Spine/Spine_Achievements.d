@@ -223,23 +223,7 @@ func void Spine_UpdateAchievementProgress(var int identifier, var int progress) 
 			};
 			
 			if (ret) {
-				if (Spine_AchievementView == 0) {
-					Spine_ShowAchievementView(identifier);
-				} else {
-					i = 0;
-					pos = MEM_StackPos.position;
-		
-					hndl = MEM_ReadStatArr(SPINE_ACHIEVEMENTSQUEUE, i);
-					
-					if (hndl == -1) {
-						MEM_WriteStatArr(SPINE_ACHIEVEMENTSQUEUE, i, identifier);
-					} else {
-						i += 1;
-						if (i < 10) {
-							MEM_StackPos.position = pos;
-						};
-					};
-				};
+				Spine_UnlockAchievement(identifier);
 			};
 		};
 	};
